@@ -17,8 +17,8 @@ with open(classesFile,'rt') as f:
 #print(classNames)
 #print(len(classNames))
 
-modelConfiguration = 'yolov4_tiny.cfg'
-modelWeights = 'yolov4_tiny.weights'
+modelConfiguration = 'yolov3.cfg'
+modelWeights = 'yolov3.weights'
 
 net = cv2.dnn.readNetFromDarknet(modelConfiguration,modelWeights)
 net.setPreferableBackend(cv2.dnn.DNN_BACKEND_OPENCV)
